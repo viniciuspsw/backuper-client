@@ -1,1 +1,1 @@
-export const apiUrl = 'https://ddrbackuper.herokuapp.com';
+export const apiUrl = 'https://ddrbackuper.herokuapp.com/api';
