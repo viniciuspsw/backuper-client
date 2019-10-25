@@ -57,7 +57,7 @@ export const ListHeaderColumn = styled.div`
   padding: 0 14px;
 `;
 
-export const ListItem = styled.div`
+export const ListItem = styled(NavLink)`
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -65,6 +65,7 @@ export const ListItem = styled.div`
   opacity: 0.8;
   margin-bottom: 12px;
   border-radius: 24px;
+  color: ${colors.blackText};
 
   &:hover {
     box-shadow: 0 1px 4px 1px rgba(0, 0, 0, .05);

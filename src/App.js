@@ -3,6 +3,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { GlobalStyle, Wrapper, Container } from './styles/global';
 import Projects from './pages/Projects';
 import CreateProject from './pages/CreateProject';
+import ShowProject from './pages/ShowProject';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Switch>
             <Route path="/" exact component={Projects} />
             <Route path="/create" component={CreateProject} />
+            <Route path="/projects/:id" component={ShowProject} />
           </Switch>
         </Container>
       </Wrapper>
