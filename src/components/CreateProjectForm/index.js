@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { withRouter } from 'react-router-dom';
 import axios from 'axios';
+import { apiUrl } from '../../config/api';
 import {
   Container, Title, TitleText, Form, FormGroup,
 } from './styles';
@@ -55,7 +56,7 @@ function CreateProjectForm({ history }) {
     const data = { name, connectionDriver, connectionUrl };
 
     try {
-      await axios.post('http://localhost:9000/api/projects', data);
+      await axios.post(`${apiUrl}/projects`, data);
       history.push('/');
     } catch (error) {
       console.log(error);
