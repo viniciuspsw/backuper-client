@@ -1,1 +1,1 @@
-export const apiUrl = 'http://142.93.121.197:4000/api';
+export const apiUrl = process.env.REACT_APP_API_URL;
